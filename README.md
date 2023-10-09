@@ -1,5 +1,5 @@
 Assignment
-!!!!"I have used MongoDB as the database for this project. After cloning the repository, you are required to set up the MongoDB database credentials and configure the (ACCESS_TOKEN_SECRET_KEY, PORT, APP_KEY) environment variables. Then, run npm i to install the necessary dependencies. also use npx prisma generate 
+!!!!"I have used MongoDB as the database for this project. After cloning the repository, you are required to set up the MongoDB database credentials and configure the (ACCESS_TOKEN_SECRET_KEY, PORT, APP_KEY) environment variables. Then, run npm i to install the necessary dependencies. also use npx prisma generate in (backend)
 
 
 1. I have created three pages: Register, Login, and a Table page where all the tasks added by users are fetched.
