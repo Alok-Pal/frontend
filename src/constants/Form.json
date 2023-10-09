@@ -1,0 +1,19 @@
+{
+    "registerFields": [
+        {
+            "title": "Title",
+            "id": "title",
+            "type": "text",
+            "name": "title",
+            "defaultValue": ""
+        },
+        {
+            "title": "Description",
+            "id": "description",
+            "type": "text",
+            "name": "description",
+            "defaultValue": ""
+        }
+        
+    ]
+}
