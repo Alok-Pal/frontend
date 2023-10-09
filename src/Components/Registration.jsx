@@ -27,9 +27,7 @@ const Registration = () => {
 
   const state = useSelector((state) => state);
   const onFinish = (values) => {
-    console.log("🚀 ~ file: Registration.jsx:17 ~ onFinish ~ values:", values);
     dispatch(registerAction(values)).then((res) => {
-      console.log("🚀 ~ file: Registration.jsx:28 ~ dispatch ~ res:", res);
       if (res?.type === "registerAction/fulfilled") {
         navigate("/");
       }else{
