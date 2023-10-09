@@ -2,9 +2,7 @@
 const DynamicInput = (props) => {
   // Inits
   const { singleFieldData, handleUserDataChange, errors,registrationFormData } = props;
-  console.log(singleFieldData,registrationFormData,"SSSSSSSSSSSSSS")
   // JSX
-  console.log(registrationFormData,"DDDDDDDDDDD",registrationFormData?.name)
   return (
     <div className="mb-2">
       <label
