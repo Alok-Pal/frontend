@@ -30,7 +30,6 @@ const ConfirmDelete = (props) => {
       onCancel={handleCancel}
       centered={true}
       width={500}
-      // closeIcon={<CloseSvg />}
       footer={[
         <div key={"wrapper"} className="mt-5">
           <button key="ok" className="btn btn-danger mx-3" onClick={deleteHandler}>
