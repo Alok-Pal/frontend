@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Login from "./Components/Login";
 import UserTable from "./Components/Table";
 import AddTask from './pages/AddTask'
 import Registration from "./Components/Registration";
 import { Toaster } from "react-hot-toast";
 import { ToastErrorSvg, ToastSuccessSvg } from "./utils/svg";
+import './App.css'
 
 function App() {
   return (

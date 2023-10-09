@@ -27,7 +27,10 @@ const UserTable = () => {
   const [form] = Form.useForm();
   const dispatch = useDispatch();
   const state = useSelector((state) => state?.userTask?.data);
-
+  const loading = useSelector((state) => state?.userTask?.isLoading);
+  console.log("🚀 ~ file: Table.jsx:31 ~ UserTable ~ loading:", loading)
+  
+  console.log(state,'state')
   const navigate = useNavigate();
   const logoutHandler = () => {
     localStorage.clear();
@@ -106,7 +109,7 @@ const UserTable = () => {
       <div className="text-center">
         <div className="">
           {" "}
-          <h3 className="mt-2">Add Task's</h3>
+          <h3 className="mt-2" style={{color:'white'}}>Add Task's</h3>
         </div>
         <button
           className=" px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"
@@ -133,18 +136,13 @@ const UserTable = () => {
         </Modal>
       </div>
       <div className="container mt-5" style={{ height: 400, width: "100%" }}>
-        <h4>All Tasks:-</h4>
+        <h4 style={{color:'white'}}>All Tasks:-</h4>
         <Table
           dataSource={tableData}
-          initialState={{
-            pagination: {
-              paginationModel: { page: 0, pageSize: 5 },
-            },
-          }}
+          loading={loading}
           pagination={{
             pageSize: 5,
           }}
-          checkboxSelection
         >
           <Column
             title="Title"
